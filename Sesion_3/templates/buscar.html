@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador</title>
+</head>
+<body>
+<h1>Buscador</h1>
+<form method="get" action="/buscar">
+    <label for="texto"> Texto a buscar:</label>
+    <input type="text" id = "texto" name="texto">
+    <button type="submit">Buscar</button>
+</form>
+{% if texto %}
+<h2>Resultados para: "{{ texto }}"</h2>
+<p>(Resultados supuestos de la búsqueda)</p>
+{% endif %}
+</body>
+</html>
